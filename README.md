@@ -1,8 +1,8 @@
 정보검색 과제
                      경북대학교 컴퓨터학부 
-2020114732 최준호
-0. 목차:
-   0.  목차
+2020114732 최준호   
+
+0.      목차
 1.	개요
 2.	프로그램 설명
 3.	관련 자료
@@ -31,6 +31,7 @@
 사용한 api의 url에 대해서 잠깐 살펴보자면 다음과 같습니다.
 "https://openapi.naver.com/v1/search/encyc?query="
 query뒤에 원하는 단어를 넣어주고 request를 보내면 다음과 같은 형태로 정보가 들어옵니다. 
+```
 {
 	"lastBuildDate":"Mon, 06 Jun 2022 15:43:46 +0900",
 	"total":51448,
@@ -44,6 +45,7 @@ query뒤에 원하는 단어를 넣어주고 request를 보내면 다음과 같�
 		}, (생략…)
 	]
 }
+```
 생략한 부분에는 items의 내용들에 해당하는 title, description, thumbnail의 정보가 있는 추가적인 검색 결과들이 있습니다.
 
 2) normalizing된 단어들을 이용하여 tf-idf 계산
